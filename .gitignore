@@ -1,0 +1,16 @@
+# Dossiers de dépendances (essentiel)
+vendor/
+
+# Fichiers volumineux ou inutiles pour le contrôle de version
+*.log
+*.cache
+*.zip
+*.rar
+
+# Exclure les images de grande taille si elles sont la cause.
+# Si les images sont nécessaires, voir l'étape B.
+back.jpg
+essaie.jpg
+p5.jpeg 
+# ou 
+# /image/

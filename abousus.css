@@ -1,0 +1,46 @@
+#trip {    
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/myp.png);
+    background-repeat: no-repeat;
+    background-size:100% auto; /* Ajuste la taille de l'image pour s'étendre sur 100% de la largeur sans recadrage */
+    background-attachment: fixed;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#equipe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+.flexc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 105px;
+    padding: 10px;
+    color: aliceblue;
+}
+.flexc p{
+    text-align: center;
+}
+.mar{
+    flex: 1 0 140px;
+}
+.sam{
+    flex: 1 0 120px;
+}
+.leti{
+    flex: 1 0 60px;
+}
+.mdm{
+    flex:1 0 0px
+}
+.mar ,.sam,.leti,.mdm,.tina{
+    margin-top: 26%;
+}
+

@@ -1,0 +1,528 @@
+header {
+    position: relative;
+}
+
+nav {
+    background: linear-gradient(122deg, #e4c1ad 0%, rgba(86, 141, 150) 25%, rgba(1, 1, 52, 0.8) 100%);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#map {
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+label.logo {
+    color: white;
+    line-height: 80px;
+    font-size: 35px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 80px;
+    display: inline-block;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+
+    font-family: 'Noto sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: #F2F2F2;
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    font-size: 23px;
+    transition: 0.2s ease-in-out;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* monument */
+#monum {
+    background: url(../back.jpg) no-repeat;
+    height: auto;
+    background-size: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    top: 11%;
+    left: 21%;
+}
+
+.img1 {
+    position: absolute;
+    left: 12%;
+}
+
+.image-titre {
+    padding: 20px;
+}
+
+#text {
+    width: 80%;
+    padding: 10px;
+    border-right: 4px solid #568d96;
+    border-bottom: 4px solid #568d96;
+    margin-top: 20px;
+}
+
+.tokyo {
+    margin-top: 140px;
+    margin-left: 320px;
+}
+
+.gastronomie {
+    margin-top: 50px;
+    margin-left: 270px;
+}
+
+.fudji  {
+    margin-top: 50px;
+    margin-left: 360px;
+}
+@media (min-width: 908px) {
+    #monumtel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 973.9px) {
+    #monum {
+        display: none;
+    }
+
+    #monumtel {
+        display: block;
+    }
+    .image-fluid{
+        margin-top: 20px;
+    }
+}
+
+/* maps */
+.textMaps {
+    position: absolute;
+    width: 38%;
+    text-align: center;
+    margin-top: 20px;
+    left: 55%;
+    top: 250%;
+}
+
+/* destination */
+#popular-destination {
+    padding: 0 10%;
+    background-color: #cdbda6;
+}
+
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.box .content h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.box .content p:nth-child(3) {
+    margin-bottom: 25px;
+}
+
+.box .content a {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #e5d8c8;
+    color: #e5d8c8;
+    font-weight: bold;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px #e5d8c8;
+}
+
+.box:hover .content {
+    transform: translateX(0);
+}
+
+/* offres */
+.places {
+    margin-top: 20px;
+}
+
+.places-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 25px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 80%;
+    height: auto;
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards .text {
+    padding: 20px;
+    font-family: Barlow Condensed;
+    line-height: 50px;
+}
+
+.cards .card-box {
+    display: flex;
+    flex-flow: row;
+    background-color: #eda838;
+    font-size: 18px;
+    font-family: Roboto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards .time {
+    flex: 1;
+}
+
+.cards .location {
+    flex: 2;
+}
+
+.cards .cost {
+    color: rgba(86, 141, 150);
+    font-size: 20px;
+}
+
+.zoom-img {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.zoom-img .img-card {
+    position: absolute;
+    overflow: hidden;
+}
+
+.img-card img {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+#fichier {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#fichier a {
+    background-color: rgba(228, 193, 173);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+    display: inline-block;
+    opacity: 0.7;
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+}
+
+#fichier a:hover {
+    background-color: black;
+    color: white;
+}
+
+#fichier .row div {
+    margin-bottom: 9px;
+}
+
+/* reponsivite */
+
+@media screen and (max-width: 1290px) {
+    .places .cards .text .h2 {
+        font-size: 8px;
+    }
+}
+
+
+@media all and (max-width: 1194px) {
+    .places .card-box p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1086px) {
+    .places .cards .text {
+        line-height: 40px;
+    }
+
+    .cards .text .h2 {
+        font-size: 10px;
+    }
+
+}
+
+@media all and (max-width: 974px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+    .card-box {
+        margin-top: 40px;
+    }
+
+    .card-box .p {
+        font-size: 10px;
+    }
+
+    .places .cards .text .h2 {
+        font-size: 8px;
+    }
+
+
+}
+
+@media all and (max-width: 768px) {
+    .places {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .textMaps {
+        position: static;
+        width: 100%;
+        left: 0;
+        top: auto;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 672px) {
+    .card .text h2 {
+        font-size: 17px;
+    }
+
+    .card {
+        height: 520px;
+        margin-bottom: 40px;
+    }
+
+    .card-box .p {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-box .p {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1182.9px) {
+    #popular-destination {
+        margin-top: 100px;
+    }
+
+}
+
+
+
+
+@media all and (max-width: 1194px) {
+    .places .card-box p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1086px) {
+    .places .cards .text {
+        line-height: 40px;
+    }
+
+    .cards .text .h2 {
+        font-size: 12px;
+    }
+
+    .cards .img-card img {
+        height: 260px;
+    }
+}
+
+@media all and (max-width: 974px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .cards .text {
+        padding: 5px;
+        font-family: Barlow Condensed;
+    }
+}
+
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        background: linear-gradient(122deg, rgba(228, 193, 173) 0%, rgba(86, 141, 150) 25%, rgba(1, 1, 52, 0.8) 100%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.active,
+    a:hover {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
